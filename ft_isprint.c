@@ -1,35 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.h                                            :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 11:17:06 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/15 18:45:50 by malcosta         ###   ########.fr       */
+/*   Created: 2025/07/15 14:14:03 by malcosta          #+#    #+#             */
+/*   Updated: 2025/07/15 14:17:38 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTS_H
-# define TESTS_H
-
-# include <stdio.h>
-# include "../libft.h"
-
-//structs
-typedef struct s_test
+int	ft_isprint(int c)
 {
-	char	*name;
-	int		passed;
-	char	*fail_case;
-}	t_test;
-
-//tests
-t_test	test_isalpha(void);
-t_test	test_isdigit(void);
-
-
-//utils
-void	print_result(t_test test);
-
-#endif
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
+}
