@@ -6,9 +6,11 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:28:41 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/16 11:54:33 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 12:37:40 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

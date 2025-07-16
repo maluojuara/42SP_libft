@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:17:06 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/16 10:35:28 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 16:41:11 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <stdio.h>
 # include <stdlib.h>
+# include <string.h>
+# include <stddef.h>
 # include "../libft.h"
 
 //structs
@@ -28,6 +30,12 @@ typedef struct s_test
 //tests
 t_test	test_isalpha(void);
 t_test	test_isdigit(void);
+t_test	test_isalnum(void);
+t_test	test_isascii(void);
+t_test	test_isprint(void);
+t_test	test_strlen(void);
+t_test	test_memset(void);
+t_test	test_bzero(void);
 
 
 //utils

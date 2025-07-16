@@ -6,9 +6,11 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 14:14:03 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/15 14:17:38 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 12:37:32 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

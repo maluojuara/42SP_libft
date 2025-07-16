@@ -6,9 +6,11 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:02:43 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/16 11:57:05 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 12:37:34 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:37:40 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/16 11:56:46 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 16:41:47 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	print_result(t_test test)
 
 int	main(void)
 {
-	t_test	(*tests[])(void) = {test_isalpha, test_isdigit, NULL};
+	t_test	(*tests[])(void) = {test_isalpha, test_isdigit, test_isalnum, test_isascii, 
+		test_isprint, test_strlen, test_memset, test_bzero, NULL};
 	int	i;
 
 	i = 0;
