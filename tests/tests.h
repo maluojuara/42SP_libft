@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:17:06 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/15 18:45:50 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/16 10:35:28 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define TESTS_H
 
 # include <stdio.h>
+# include <stdlib.h>
 # include "../libft.h"
 
 //structs
@@ -31,5 +32,6 @@ t_test	test_isdigit(void);
 
 //utils
 void	print_result(t_test test);
+int		check_norminette(char *file_name);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/15 10:34:34 by malcosta          #+#    #+#              #
-#    Updated: 2025/07/15 11:55:04 by malcosta         ###   ########.fr        #
+#    Updated: 2025/07/16 10:45:17 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,3 +23,6 @@ $(NAME):
 
 clean:
 	rm -f $(NAME)
+
+re: clean all
+	
