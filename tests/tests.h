@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:17:06 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/16 16:41:11 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/17 13:43:09 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,16 @@ typedef struct s_test
 {
 	char	*name;
 	int		passed;
-	char	*fail_case;
+	char	**fail_cases;
+	int		fail_count;
 }	t_test;
+
+typedef struct s_int_to_int
+{
+	int		input;
+	int		expected;
+	char	*desc;
+}	t_int_to_int;
 
 //tests
 t_test	test_isalpha(void);
