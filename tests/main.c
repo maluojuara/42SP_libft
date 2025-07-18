@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
+/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:37:40 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/17 21:55:45 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/18 18:52:40 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	main(void)
 {
-	t_test	(*tests[])(void) = {test_isalpha, test_isdigit, test_isascii, NULL};
+	t_test	(*tests[])(void) = {test_isalpha, test_isdigit, test_isascii, test_isalnum, 
+		test_isprint, test_strlen, NULL};
 	int	i;
 
 	i = 0;

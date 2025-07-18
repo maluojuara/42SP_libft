@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   runner_int_to_int.c                                :+:      :+:    :+:   */
+/*   runner_str_to_int.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 13:48:28 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/18 18:55:23 by malcosta         ###   ########.fr       */
+/*   Created: 2025/07/18 18:45:25 by malcosta          #+#    #+#             */
+/*   Updated: 2025/07/18 18:59:15 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "../tests.h"
 
-t_test runner_int_to_int(
+t_test runner_str_to_int(
 	char *test_name,
-	t_case_int_to_int *cases,
+	t_case_str_to_int *cases,
 	int case_count,
-	int (*fn)(int)
+	size_t (*fn)(const char *str)
 )
 {
 	t_test result;
@@ -35,9 +36,9 @@ t_test runner_int_to_int(
 	int	i = 0;
 	while (i < case_count)
 	{
-		int input = cases[i].input;
-		int expected = cases[i].expected;
-		int output = fn(input);
+		const char *input = cases[i].input;
+		size_t expected = cases[i].expected;
+		size_t output = fn(input);
 
 		if (output != expected)
 		{

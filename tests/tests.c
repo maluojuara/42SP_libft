@@ -3,98 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   tests.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
+/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:40:29 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/17 21:47:27 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/18 18:53:34 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tests.h"
-
-// //functions - part 1
-
-
-// t_test	test_isascii(void)
-// {
-// 	t_test	result = {"ft_isascii", 1, NULL};
-// 	int	i;
-// 	int	norm_error = check_norminette(result.name);
-
-// 	if (norm_error)
-// 	{
-// 		result.passed = 0;
-// 		result.fail_case = "norm error";
-// 	}
-// 	else
-// 	{
-// 		struct {
-// 		int input;
-// 		int expected;
-// 		char *desc;
-// 	} cases[] = {
-// 		{-23, 0, "testing int -23"},
-// 		{21, 1, "testing int 21"},
-// 		{' ', 1, "testing space (' ')"},
-// 		{928233, 0, "testing int 928233"},
-// 		{'\0', 1, "testing null"},
-// 	};
-
-// 	i = 0;
-// 	while (i < 5)
-// 	{
-// 		if(ft_isascii(cases[i].input) != cases[i].expected)
-// 		{
-// 			result.fail_case = cases[i].desc;
-// 			result.passed = 0;
-// 			return	(result);
-// 		}
-// 		i++;
-// 	}
-// 	}
-// 	return (result);
-// }
-
-// t_test	test_isprint(void)
-// {
-// 	t_test	result = {"ft_isprint", 1, NULL};
-// 	int	i;
-// 	int	norm_error = check_norminette(result.name);
-
-// 	if (norm_error)
-// 	{
-// 		result.passed = 0;
-// 		result.fail_case = "norm error";
-// 	}
-// 	else
-// 	{
-// 		struct {
-// 		int input;
-// 		int expected;
-// 		char *desc;
-// 	} cases[] = {
-// 		{-23, 0, "testing int -23"},
-// 		{42, 1, "testing int 42"},
-// 		{' ', 1, "testing space (' ')"},
-// 		{928233, 0, "testing int 928233"},
-// 		{'\0', 0, "testing null"},
-// 		{127, 0, "testing 127"},
-// 	};
-
-// 	i = 0;
-// 	while (i < 6)
-// 	{
-// 		if(ft_isprint(cases[i].input) != cases[i].expected)
-// 		{
-// 			result.fail_case = cases[i].desc;
-// 			result.passed = 0;
-// 			return	(result);
-// 		}
-// 		i++;
-// 	}
-// 	}
-// 	return (result);
-// }
 
 // t_test	test_strlen(void)
 // {
@@ -114,12 +29,6 @@
 // 		size_t expected;
 // 		char *desc;
 // 	} cases[] = {
-// 		{"malu", 4, "testing string \"malu\""},
-// 		{"", 0, "testing empty string"},
-// 		{"a", 1, "testing string with one letter"},
-// 		{"a 	90", 5, "testing string with spaces and numbers"},
-// 		{"oioioioioioioioioiioioioioioioioioioioioi", 41, "testing big string"},
-// 	};
 
 // 	i = 0;
 // 	while (i < 5)

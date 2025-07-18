@@ -1,20 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   test_ft_isalpha.c                                  :+:      :+:    :+:   */
+/*   test_ft_strlen.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/17 13:14:05 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/18 18:26:05 by malcosta         ###   ########.fr       */
+/*   Created: 2025/07/18 18:48:02 by malcosta          #+#    #+#             */
+/*   Updated: 2025/07/18 18:55:54 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "tests.h"
 
-t_test test_isalpha(void)
+
+t_test test_strlen(void)
 {
-    t_test result = {"ft_isalpha", 1, NULL, 0};
+    t_test result = {"ft_strlen", 1, NULL, 0};
     int norm_error = check_norminette(result.name);
 
     if (norm_error)
@@ -27,19 +28,18 @@ t_test test_isalpha(void)
     }
     else
     {
-        t_case_int_to_int cases[] = {
-            {'m', 1, "testing char 'm'"},
-            {'M', 1, "testing char 'M'"},
-            {' ', 0, "testing space (' ')"},
-            {'9', 0, "testing char '9'"},
-            {'\0', 0, "testing null"},
-            {'$', 0, "testing char '$'"},
-            {'\n', 0, "testing newline ('\\n')"},
-            {-3, 0, "testing negative number"}
+        t_case_str_to_int cases[] = {
+			{"malu", 4, "testing string \"malu\""},
+			{"", 0, "testing empty string"},
+			{"a", 1, "testing string with one letter"},
+			{"a 	90", 5, "testing string with spaces and numbers"},
+			{"oioioioioioioioioiioioioioioioioioioioioi", 41, "testing big string"},
+			{"abc\n", 4, "testing string with new line"},
+			{"a$!-", 4, "testing string with special ascii characters"}
         };
 
         int case_count = sizeof(cases) / sizeof(cases[0]);
 
-        return runner_int_to_int(result.name, cases, case_count, ft_isalpha);
+        return runner_str_to_int(result.name, cases, case_count, ft_strlen);
     }
 }

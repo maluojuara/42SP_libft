@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
+/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 20:55:32 by maluojuara        #+#    #+#             */
-/*   Updated: 2025/07/17 21:57:15 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/18 19:01:09 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	print_result(t_test test)
 	if (test.passed)
 	{
 		printf("%s: \033[32mok\033[0m\n", test.name);
-		printf("\n------------------------------------\n");
+		printf("------------------------------------\n");
 		return ;
 	}
 	printf("%s: \033[31mko\033[0m\n", test.name);
@@ -29,7 +29,7 @@ void	print_result(t_test test)
 		i++;
 	}
 	
-	printf("\n------------------------------------\n");
+	printf("------------------------------------\n");
 }
 
 int	check_norminette(char *file_name)
