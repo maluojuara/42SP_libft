@@ -3,31 +3,49 @@
 /*                                                        :::      ::::::::   */
 /*   runner_int_to_int.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:48:28 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/17 14:25:26 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/17 21:22:46 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../tests.h"
 
-t_test runner_int_to_int(t_int_to_int cases[], int cases_count, int (*func)(int), char *function_name)
+t_test runner_int_to_int(
+	char *test_name,
+	t_case_int_to_int *cases,
+	int case_count,
+	int (*fn)(int)
+)
 {
-	t_test	result;
-	result.name = function_name;
+	t_test result;
+	result.name = test_name;
 	result.passed = 1;
 	result.fail_count = 0;
-	int	i = 0;
-
-	while (i < cases_count)
+	result.fail_cases = malloc(sizeof(char *) * case_count);
+	if (!result.fail_cases)
 	{
-		if (func(cases[i].input) != cases[i].expected)
+		result.passed = 0;
+		static char	*internal_error = "internal error";
+		result.fail_cases = &internal_error;
+		result.fail_count = 1;
+		return result;
+	}
+	int	i = 0;
+	while (i < case_count)
+	{
+		int input = cases[i].input;
+		int expected = cases[i].expected;
+		int output = fn(input);
+
+		if (output != expected)
 		{
 			result.passed = 0;
+			result.fail_cases[result.fail_count] = cases[i].desc;
 			result.fail_count++;
 		}
 		i++;
 	}
-	return (result);
+	return	(result);
 }
