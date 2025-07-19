@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 21:50:42 by maluojuara        #+#    #+#             */
-/*   Updated: 2025/07/19 13:40:26 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:58:12 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void test_ft_isascii(void)
 {
 	char	*function_name = "ft_isascii";
-	printf("\033[1m\n%s:\033[0m\n", function_name);
+	printf("\033[1m%s:\033[0m\n\n", function_name);
 
 	if (!norm_error(function_name))
 	{

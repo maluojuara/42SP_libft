@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 18:48:02 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/19 13:47:23 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/19 16:58:31 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void test_ft_strlen(void)
 {
 	char	*function_name = "ft_strlen";
-	printf("\033[1m\n%s:\033[0m\n", function_name);
+	printf("\033[1m%s:\033[0m\n\n", function_name);
 
 	if (!norm_error(function_name))
 	{
