@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:17:06 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/18 18:59:04 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/19 13:47:49 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,46 +19,21 @@
 # include <stddef.h>
 # include "../libft.h"
 
-//structs
-typedef struct s_test
-{
-	char	*name;
-	int		passed;
-	char	**fail_cases;
-	int		fail_count;
-}	t_test;
-
-typedef struct s_case_int_to_int
-{
-	int		input;
-	int		expected;
-	char	*desc;
-}	t_case_int_to_int;
-
-typedef struct s_case_str_to_int
-{
-	char 	*input;
-	int		expected;
-	char	*desc;
-}	t_case_str_to_int;
-
-//runners
-t_test runner_int_to_int(char *test_name, t_case_int_to_int *cases, int case_count, int (*fn)(int));
-t_test runner_str_to_int(char *test_name, t_case_str_to_int *cases, int case_count, size_t (*fn)(const char *str));
-
 //tests
-t_test	test_isalpha(void);
-t_test	test_isdigit(void);
-t_test	test_isalnum(void);
-t_test	test_isascii(void);
-t_test	test_isprint(void);
-t_test	test_strlen(void);
+void test_ft_isalpha(void);
+void test_ft_isdigit(void);
+void test_ft_isascii(void);
+void test_ft_isalnum(void);
+void test_ft_isprint(void);
+void	test_ft_strlen(void);
 // t_test	test_memset(void);
 // t_test	test_bzero(void);
 
 
+//asserts
+void	assert_equal_int(const char *case_desc, int output, int expected);
+
 //utils
-void	print_result(t_test test);
-int		check_norminette(char *file_name);
+int	norm_error(char *file_name);
 
 #endif

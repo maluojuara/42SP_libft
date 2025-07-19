@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+         #
+#    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/15 10:34:34 by malcosta          #+#    #+#              #
-#    Updated: 2025/07/17 21:34:32 by maluojuara       ###   ########.fr        #
+#    Updated: 2025/07/19 13:11:29 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = test
 
-SRC = *.c tests/*.c tests/runners/*.c
+SRC = *.c tests/*.c
 CC = cc 
 CFLAGS = -Wall -Wextra -Werror
 

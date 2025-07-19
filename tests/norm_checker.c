@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   norm_checker.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 11:28:41 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/19 13:35:10 by malcosta         ###   ########.fr       */
+/*   Created: 2025/07/17 20:55:32 by maluojuara        #+#    #+#             */
+/*   Updated: 2025/07/19 13:39:12 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "tests.h"
+
+int	norm_error(char *file_name)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	char	cmd[256];
+	snprintf(cmd, sizeof(cmd),
+		"norminette -R CheckForbiddenSourceHeader %s.c | grep -q Error", file_name);
+
+	int status = system(cmd);
+
+	if (status == 0)
+	{
+		printf("\033[31mnorm error\033[0m\n");
 		return (1);
+	}
 	return (0);
 }

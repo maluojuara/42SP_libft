@@ -6,44 +6,10 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:40:29 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/18 18:53:34 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/19 13:48:37 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-// t_test	test_strlen(void)
-// {
-// 	t_test	result = {"ft_strlen", 1, NULL};
-// 	int	i;
-// 	int	norm_error = check_norminette(result.name);
-
-// 	if (norm_error)
-// 	{
-// 		result.passed = 0;
-// 		result.fail_case = "norm error";
-// 	}
-// 	else
-// 	{
-// 		struct {
-// 		char *input;
-// 		size_t expected;
-// 		char *desc;
-// 	} cases[] = {
-
-// 	i = 0;
-// 	while (i < 5)
-// 	{
-// 		if(ft_strlen(cases[i].input) != cases[i].expected)
-// 		{
-// 			result.fail_case = cases[i].desc;
-// 			result.passed = 0;
-// 			return	(result);
-// 		}
-// 		i++;
-// 	}
-// 	}
-// 	return (result);
-// }
 
 // t_test test_memset(void)
 // {
@@ -88,6 +54,11 @@
 // 	}
 // 	return result;
 // }
+
+
+
+
+
 
 // t_test	test_bzero(void)
 // {
