@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 10:35:01 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/20 01:59:56 by maluojuara       ###   ########.fr       */
+/*   Created: 2025/07/20 01:49:24 by maluojuara        #+#    #+#             */
+/*   Updated: 2025/07/20 01:50:44 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+int	ft_tolower(int c)
+{
+	int	out;
 
-# include <stddef.h>
-# include <unistd.h>
-# include <stdlib.h>
-
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-size_t	ft_strlen(const char *s);
-void	*ft_memset(void *s, int c, size_t n);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-
-#endif
+	out = c;
+	if (c >= 65 && c <= 90)
+		out = c + 32;
+	return (out);
+}
