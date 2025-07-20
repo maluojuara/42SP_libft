@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/20 01:59:31 by maluojuara        #+#    #+#             */
-/*   Updated: 2025/07/20 02:00:55 by maluojuara       ###   ########.fr       */
+/*   Created: 2025/07/20 01:49:24 by maluojuara        #+#    #+#             */
+/*   Updated: 2025/07/20 02:39:12 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putchar_fd(char c, int fd)
+int	ft_tolower(int c)
 {
-	write(fd, &c, 1);
+	int	out;
+
+	out = c;
+	if (c >= 65 && c <= 90)
+		out = c + 32;
+	return (out);
 }

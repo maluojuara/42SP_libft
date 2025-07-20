@@ -1,34 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/20 01:51:22 by maluojuara        #+#    #+#             */
-/*   Updated: 2025/07/20 01:58:35 by maluojuara       ###   ########.fr       */
+/*   Created: 2025/07/20 01:19:43 by maluojuara        #+#    #+#             */
+/*   Updated: 2025/07/20 02:42:48 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+#include "libft.h"
+
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	const char	*ptr;
+	unsigned char	*ptr_dst;
+	unsigned char	*ptr_src;
+	size_t			i;
 
-	ptr = s;
-	unsigned char uc;
-	uc = (unsigned char)c;
-
-	if (uc == '\0')
+	ptr_dst = (unsigned char *)dst;
+	ptr_src = (unsigned char *)src;
+	i = 0;
+	if (!ptr_dst && !ptr_src)
+		return (0);
+	if (ptr_dst <= ptr_src)
 	{
-		while(*ptr)
-			ptr++;
-		return ((char *)ptr);
+		ft_memcpy(ptr_dst, ptr_src, len);
 	}
-	while(*ptr)
+	else
 	{
-		if (*ptr == uc)
-			return ((char *)ptr);
-		ptr++;
+		i = len;
+		while (i > 0)
+		{
+			i--;
+			ptr_dst[i] = ptr_src[i];
+		}
 	}
-	return (NULL);
+	return (dst);
 }
