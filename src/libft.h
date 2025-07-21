@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
+/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:35:01 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/20 02:52:24 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/21 16:18:55 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 /*PART 1 - Libc functions*/
 /*Checker functions*/
@@ -29,7 +30,7 @@ int		ft_isprint(int nb);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-size_t	ft_strlcat(char *dest, const char *src, size_t size);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strnstr(const char *big, const char *lit, size_t len);
