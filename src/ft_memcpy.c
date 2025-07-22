@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 12:23:45 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/19 17:09:47 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/22 14:29:18 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*ptr_dst;
 	unsigned char	*ptr_src;
 
+	if (!dst && !src)
+		return (NULL);
 	i = 0;
 	ptr_dst = (unsigned char *)dst;
 	ptr_src = (unsigned char *)src;

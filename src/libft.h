@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:35:01 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/21 16:18:55 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/22 10:18:16 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+
 
 /*PART 1 - Libc functions*/
 /*Checker functions*/
