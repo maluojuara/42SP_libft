@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 12:05:42 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/22 16:48:42 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/23 13:16:50 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,34 +14,22 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	char	*b;
-	char	*l;
-	char	*found;
 	size_t	i;
+	size_t	j;
 
-	b = (char *)big;
-	l = (char *)little;
-	found = (char *)big;
-	i = 1;
-	if (!*little)
+	if (*little == '\0')
 		return ((char *)big);
-	if (len == 0)
-		return (NULL);
-	while (i < len && *b)
+	i = 0;
+	while (*(big + i) && i < len)
 	{
-		if (*b == *l)
+		j = 0;
+		while (*(little + j) && (*(big + i + j) == *(little + j))
+			&& (i + j) < len)
 		{
-			found = b;
-			while (*b == *l && i < len && *b)
-			{
-				b++;
-				l++;
-				i++;
-				if (!*l)
-					return (found);
-			}
+			j++;
 		}
-		b++;
+		if (*(little + j) == '\0')
+			return ((char *)(big + i));
 		i++;
 	}
 	return (NULL);

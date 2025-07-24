@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:35:01 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/22 10:18:16 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/23 13:19:44 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
-
 
 /*PART 1 - Libc functions*/
 /*Checker functions*/
