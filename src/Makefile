@@ -6,7 +6,7 @@
 #    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/07/22 14:49:12 by malcosta         ###   ########.fr        #
+#    Updated: 2025/07/24 19:04:30 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ ft_strrchr.c ft_memchr.c\
 ft_calloc.c ft_strdup.c\
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
 ft_strlcat.c ft_strncmp.c ft_strnstr.c\
+ft_substr.c ft_strjoin.c\
 
 CC = cc
 RM = rm -f
@@ -35,7 +36,7 @@ $(NAME): $(OBJS)
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS) 
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)
