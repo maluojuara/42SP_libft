@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/20 02:12:03 by maluojuara        #+#    #+#             */
-/*   Updated: 2025/07/25 18:11:38 by malcosta         ###   ########.fr       */
+/*   Created: 2025/07/25 17:21:34 by malcosta          #+#    #+#             */
+/*   Updated: 2025/07/25 18:33:21 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	void	*out;
-	size_t	alloc;
-
-	if (size != 0 && nmemb > SIZE_MAX / size)
+	size_t	i;
+	size_t	j;
+	
+	if (!s1 || !set)
 		return (NULL);
-	alloc = nmemb * size;
-	out = malloc(alloc);
-	if (!out)
-		return (NULL);
-	ft_bzero(out, alloc);
-	return (out);
+	i = 0;
+	j = ft_strlen(s1);
 }
