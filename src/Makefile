@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
+#    By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/07/24 19:04:30 by malcosta         ###   ########.fr        #
+#    Updated: 2025/07/27 14:58:26 by maluojuara       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,8 @@ ft_calloc.c ft_strdup.c\
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
 ft_strlcat.c ft_strncmp.c ft_strnstr.c\
 ft_substr.c ft_strjoin.c\
+ft_strtrim.c ft_split.c\
+ft_putnbr_fd.c\
 
 CC = cc
 RM = rm -f
