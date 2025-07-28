@@ -6,7 +6,7 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 14:12:41 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:16:24 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/28 19:55:41 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	char	*ptr;
 
 	ptr = s;
-	if (fd < 0)
+	if (!s)
 		return ;
 	while (*ptr)
 	{

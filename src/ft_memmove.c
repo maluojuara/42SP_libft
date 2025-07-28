@@ -6,19 +6,19 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 14:12:03 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:12:06 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/28 14:21:55 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	unsigned char	*ptr_dst;
 	unsigned char	*ptr_src;
 	size_t			i;
 
-	ptr_dst = (unsigned char *)dst;
+	ptr_dst = (unsigned char *)dest;
 	ptr_src = (unsigned char *)src;
 	i = 0;
 	if (!ptr_dst && !ptr_src)
@@ -36,5 +36,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			ptr_dst[i] = ptr_src[i];
 		}
 	}
-	return (dst);
+	return (dest);
 }
