@@ -6,11 +6,23 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 15:16:16 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/22 11:49:29 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/29 19:30:51 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Append src to dst, up to size bytes total, 
+ * ensuring null-termination.
+ * 
+ * @param dst Destination buffer.
+ * @param src Source string to append.
+ * @param size Total size of dst buffer.
+ * @return size_t Total length of the string it tried to create 
+ * (initial dst + src).
+ * If the return value is >= size, truncation happened.
+ */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

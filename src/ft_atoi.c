@@ -6,11 +6,17 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 10:06:20 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/22 14:49:45 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/29 19:00:24 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Converts the initial portion of the string to int.
+ * @param nptr --> Pointer to the beginning of the string.
+ * @return The converted value or 0 if it is an error.
+*/
 
 int	ft_atoi(const char *nptr)
 {

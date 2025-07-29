@@ -6,12 +6,19 @@
 /*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 14:18:59 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 19:35:56 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/29 19:07:07 by malcosta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
+/**
+ * @brief Converts an integer to a null-terminated string.
+ * 
+ * @param n The integer to convert.
+ * @return char* Pointer to the newly allocated string representing 
+ * the integer.
+ */
 
 static int	count_len(long nb)
 {
