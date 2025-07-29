@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
+#    By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/07/28 19:08:59 by malcosta         ###   ########.fr        #
+#    Updated: 2025/07/29 00:05:44 by maluojuara       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,10 +26,15 @@ ft_substr.c ft_strjoin.c ft_itoa.c\
 ft_strtrim.c ft_split.c ft_strmapi.c\
 ft_putnbr_fd.c ft_striteri.c\
 
+SRCS_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c\
+ft_lstsize_bonus.c ft_lstlast_bonus.c\
+
 CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
+
 OBJS = $(SRCS:.c=.o)
+OBJS_B = $(SRCS_B:.c=.o)
 
 
 $(NAME): $(OBJS)
@@ -38,10 +43,13 @@ $(NAME): $(OBJS)
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(OBJS_B)
 
 fclean: clean
 	$(RM) $(NAME)
+
+bonus: $(OBJS) $(OBJS_B)
+	ar rc $(NAME) $(OBJS) $(OBJS_B)
 
 re: fclean all
 
