@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+         #
+#    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/07/29 00:05:44 by maluojuara       ###   ########.fr        #
+#    Updated: 2025/07/29 16:33:22 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,10 @@ ft_putnbr_fd.c ft_striteri.c\
 
 SRCS_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c\
 ft_lstsize_bonus.c ft_lstlast_bonus.c\
+ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
+ft_lstiter_bonus.c ft_lstmap_bonus.c\
+ft_lstclear_bonus.c\
+
 
 CC = cc
 RM = rm -f
