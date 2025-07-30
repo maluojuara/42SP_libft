@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 12:23:45 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:21:36 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/30 12:24:14 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief 
+ * 
+ * @param dest 
+ * @param src 
+ * @param n 
+ * @return void* 
+ */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;
