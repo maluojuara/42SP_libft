@@ -3,12 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 18:08:08 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:14:19 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/30 18:38:37 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @brief Converts a lower-case letter to the corresponding
+     upper-case letter.  The argument must be representable 
+	 as an unsigned char or the value of EOF.
+ * 
+ * @param c The char to convert (as int).
+ * @return int The converted char (as int).
+ */
 
 int	ft_toupper(int c)
 {

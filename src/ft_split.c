@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 14:12:45 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:12:47 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/30 17:47:19 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Allocates memory (using malloc(3)) and returns an
+array of strings obtained by splitting ’s’ using
+the character ’c’ as a delimiter. The array must
+end with a NULL pointer.
+ * 
+ * @param s The string to be split.
+ * @param c The delimiter character.
+ * @return char** The array of new strings resulting from the split.
+NULL if the allocation fails.
+ */
 
 static int	count_sub(char const *str, char c)
 {

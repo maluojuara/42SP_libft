@@ -6,20 +6,22 @@
 /*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 12:23:45 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/30 12:24:14 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/30 17:39:16 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief 
+ * @brief copies n bytes from memory area src to
+       memory area dest.  The memory areas must not overlap.
  * 
- * @param dest 
- * @param src 
- * @param n 
- * @return void* 
+ * @param dest Pointer to the destination memory area.
+ * @param src Pointer to the source memory area.
+ * @param n Number of bytes to copy.
+ * @return void* Pointer to the destination memory area.
  */
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;

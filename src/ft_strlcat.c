@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 15:16:16 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/29 19:30:51 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/30 18:08:35 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 
 /**
  * @brief Append src to dst, up to size bytes total, 
- * ensuring null-termination.
+ * ensuring null-termination. If the destination 
+ * buffer, limited by its size, isn't large enough to 
+ * hold the copy, the resulting string is truncated 
+ * (but it is guaranteed to be null-terminated).
+ * They return the length of the total string they 
+ * tried to create.
  * 
  * @param dst Destination buffer.
  * @param src Source string to append.

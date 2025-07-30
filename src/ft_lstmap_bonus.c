@@ -6,7 +6,7 @@
 /*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 16:25:14 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/30 12:17:03 by maluojuara       ###   ########.fr       */
+/*   Updated: 2025/07/30 12:27:25 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f) (void *), void (*del)(void *))
 	void	*content;
 
 	if (!lst || !f || !del)
-		return (0);
+		return (NULL);
 	new = 0;
 	while (lst != NULL)
 	{

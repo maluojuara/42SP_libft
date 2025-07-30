@@ -3,14 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+        */
+/*   By: maluojuara <maluojuara@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 18:42:26 by malcosta          #+#    #+#             */
-/*   Updated: 2025/07/28 14:17:41 by malcosta         ###   ########.fr       */
+/*   Updated: 2025/07/30 18:02:34 by maluojuara       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/**
+ * @brief Allocates memory (using malloc(3)) and returns a
+new string, which is the result of concatenating
+’s1’ and ’s2’.
+ * 
+ * @param s1 The prefix string.
+ * @param s2 The suffix string.
+ * @return char* The new string.
+NULL if the allocation fails.
+ */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
