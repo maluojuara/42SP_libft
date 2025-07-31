@@ -52,8 +52,8 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-bonus: $(OBJS) $(OBJS_B)
-	ar rc $(NAME) $(OBJS) $(OBJS_B)
+bonus: $(NAME) $(OBJS_B)
+	ar r $(NAME) $(OBJS_B)
 
 re: fclean all
 
