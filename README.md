@@ -6,7 +6,7 @@
  [![Size](https://img.shields.io/github/repo-size/maluojuara/42SP_libft?color=blue&label=Size&logo=Size&style=?style=flat)](https://github.com/maluojuara/42SP_libft)
  [![Activity](https://img.shields.io/github/last-commit/maluojuara/42SP_libft?color=red&label=Last%20Commit&style=flat)](https://github.com/maluojuara/42SP_libft)
 
-Libft is the first project within the Common Core curriculum at 42 School. The aim of this project is to code a C library regrouping usual functions that you'll be allowed to use in all your other projects. Since in most 42 projects we can't use any of the standard C library functions, the goal of this first project is to replicate some of the usual functions ourselves, as well as some additional functions.
+Libft is the first project within the Common Core curriculum at 42 School. The aim of this project is to code a C library implementing usual functions that you'll be allowed to use in all your other projects. Since in most 42 projects we can't use any of the standard C library functions, the goal of this first project is to replicate some of the usual functions ourselves, as well as some additional functions.
 
 ### 📚 List of functions
 
