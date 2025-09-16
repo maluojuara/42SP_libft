@@ -6,11 +6,14 @@
 #    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/07/29 16:33:22 by malcosta         ###   ########.fr        #
+#    Updated: 2025/09/16 17:49:29 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
+SRCS_PRINTF = ft_printf/printf.c ft_printf/char_conversions.c\
+ft_printf/nb_conversions.c ft_printf/prints.c
 
 SRCS = ft_memcpy.c ft_memset.c ft_bzero.c\
 ft_isalnum.c ft_isalpha.c ft_isascii.c\
@@ -24,14 +27,13 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
 ft_strlcat.c ft_strncmp.c ft_strnstr.c\
 ft_substr.c ft_strjoin.c ft_itoa.c\
 ft_strtrim.c ft_split.c ft_strmapi.c\
-ft_putnbr_fd.c ft_striteri.c\
+ft_putnbr_fd.c ft_striteri.c $(SRCS_PRINTF)\
 
 SRCS_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c\
 ft_lstsize_bonus.c ft_lstlast_bonus.c\
 ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
 ft_lstiter_bonus.c ft_lstmap_bonus.c\
 ft_lstclear_bonus.c\
-
 
 CC = cc
 RM = rm -f
