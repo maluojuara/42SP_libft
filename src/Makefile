@@ -6,14 +6,16 @@
 #    By: malcosta <malcosta@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/20 02:38:04 by maluojuara        #+#    #+#              #
-#    Updated: 2025/09/16 17:49:29 by malcosta         ###   ########.fr        #
+#    Updated: 2025/09/18 19:02:54 by malcosta         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRCS_PRINTF = ft_printf/printf.c ft_printf/char_conversions.c\
+SRCS_PRINTF = ft_printf/ft_printf.c ft_printf/char_conversions.c\
 ft_printf/nb_conversions.c ft_printf/prints.c
+
+OBJS_PRINTF = $(SRCS_PRINTF:.c=.o)
 
 SRCS = ft_memcpy.c ft_memset.c ft_bzero.c\
 ft_isalnum.c ft_isalpha.c ft_isascii.c\
@@ -27,7 +29,7 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
 ft_strlcat.c ft_strncmp.c ft_strnstr.c\
 ft_substr.c ft_strjoin.c ft_itoa.c\
 ft_strtrim.c ft_split.c ft_strmapi.c\
-ft_putnbr_fd.c ft_striteri.c $(SRCS_PRINTF)\
+ft_putnbr_fd.c ft_striteri.c\
 
 SRCS_B = ft_lstnew_bonus.c ft_lstadd_front_bonus.c\
 ft_lstsize_bonus.c ft_lstlast_bonus.c\
@@ -39,9 +41,8 @@ CC = cc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 
-OBJS = $(SRCS:.c=.o)
+OBJS = $(SRCS:.c=.o) $(OBJS_PRINTF)
 OBJS_B = $(SRCS_B:.c=.o)
-
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
@@ -58,5 +59,8 @@ bonus: $(NAME) $(OBJS_B)
 	ar r $(NAME) $(OBJS_B)
 
 re: fclean all
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: all clean fclean re bonus
